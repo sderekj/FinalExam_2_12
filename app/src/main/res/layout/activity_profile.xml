@@ -30,33 +30,32 @@
 
             <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
 
                 <ImageButton
-                    android:id="@+id/button1"
+                    android:id="@+id/heart_button"
                     android:layout_width="@dimen/profile_imagebutton_width"
                     android:layout_height="@dimen/profile_imagebutton_height"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginRight="5dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/ic_favorite_black_24dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/button1"
+                    android:layout_below="@id/heart_button"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginRight="5dp"
                     android:text="Button 1" />
 
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
 
                 <ImageButton
-                    android:id="@+id/button2"
+                    android:id="@+id/message_button"
                     android:layout_width="@dimen/profile_imagebutton_width"
                     android:layout_height="@dimen/profile_imagebutton_height"
                     android:scaleType="fitXY"
@@ -65,7 +64,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/button2"
+                    android:layout_below="@id/message_button"
                     android:layout_centerHorizontal="true"
                     android:text="Button 2" />
 
@@ -73,10 +72,11 @@
 
             <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
 
                 <ImageButton
-                    android:id="@+id/button3"
+                    android:id="@+id/settings_button"
                     android:layout_width="@dimen/profile_imagebutton_width"
                     android:layout_height="@dimen/profile_imagebutton_height"
                     android:scaleType="fitXY"
@@ -85,7 +85,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/button3"
+                    android:layout_below="@id/settings_button"
                     android:layout_centerHorizontal="true"
                     android:text="Button 3" />
 
@@ -93,10 +93,11 @@
 
             <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
 
                 <ImageButton
-                    android:id="@+id/button4"
+                    android:id="@+id/logout_button"
                     android:layout_width="@dimen/profile_imagebutton_width"
                     android:layout_height="@dimen/profile_imagebutton_height"
                     android:scaleType="fitXY"
@@ -105,9 +106,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/button4"
+                    android:layout_below="@id/logout_button"
                     android:layout_centerHorizontal="true"
-                    android:text="Button 4" />
+                    android:text="Logout" />
 
             </RelativeLayout>
 
