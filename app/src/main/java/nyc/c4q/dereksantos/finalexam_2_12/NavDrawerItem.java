@@ -6,9 +6,11 @@ package nyc.c4q.dereksantos.finalexam_2_12;
 public class NavDrawerItem {
 
     int drawable;
+    int resourceId;
     String buttonText;
 
-    public NavDrawerItem(int drawable, String buttonText) {
+    public NavDrawerItem(int resourceId ,int drawable, String buttonText) {
+        this.resourceId = resourceId;
         this.drawable = drawable;
         this.buttonText = buttonText;
     }
@@ -27,5 +29,13 @@ public class NavDrawerItem {
 
     public void setButtonText(String buttonText) {
         this.buttonText = buttonText;
+    }
+
+    public int getResourceId() {
+        return resourceId;
+    }
+
+    public void setResourceId(int resourceId) {
+        this.resourceId = resourceId;
     }
 }

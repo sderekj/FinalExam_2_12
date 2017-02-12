@@ -6,15 +6,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by SACC on 2/12/17.
  */
 public class ProfileActivity extends AppCompatActivity implements View.OnClickListener {
 
+    private List<NavDrawerItem> itemList = new ArrayList<>();
     private RecyclerView recyclerView;
     private ImageButton button1;
     private ImageButton button2;
@@ -41,6 +44,15 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
         button4.setOnClickListener(this);
+
+        itemList.add(new NavDrawerItem(button1.getId(), R.drawable.ic_favorite_black_24dp, "Button 1"));
+        itemList.add(new NavDrawerItem(button2.getId(), R.drawable.ic_email_black_24dp, "Button 2"));
+        itemList.add(new NavDrawerItem(button3.getId(), R.drawable.ic_settings_black_24dp, "Button 3"));
+        itemList.add(new NavDrawerItem(button4.getId(), R.drawable.ic_close_black_24dp, "Logout"));
+
+        NavDrawerAdapter adapter = (NavDrawerAdapter) recyclerView.getAdapter();
+        adapter.setData(itemList);
+
     }
 
     @Override
@@ -57,6 +69,25 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
                 startActivity(intent);
                 break;
             case R.id.button4:
+                Toast.makeText(this, "Selected Logout Activity", Toast.LENGTH_SHORT).show();
+                finishAffinity();
+                break;
+        }
+    }
+
+    public void doThis(View view) {
+        switch (view.getId()) {
+            case R.drawable.ic_favorite_black_24dp:
+                Toast.makeText(this, "Selected Heart Activity", Toast.LENGTH_SHORT).show();
+                break;
+            case R.drawable.ic_email_black_24dp:
+                Toast.makeText(this, "Selected Message Activity", Toast.LENGTH_SHORT).show();
+                break;
+            case R.drawable.ic_settings_black_24dp:
+                Intent intent = new Intent(getApplicationContext(), SettingsActivity.class);
+                startActivity(intent);
+                break;
+            case R.drawable.ic_close_black_24dp:
                 Toast.makeText(this, "Selected Logout Activity", Toast.LENGTH_SHORT).show();
                 finishAffinity();
                 break;

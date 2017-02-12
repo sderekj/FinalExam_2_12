@@ -3,4 +3,5 @@
     <string name="username_edittext_hint">Username</string>
     <string name="password_edittext_hint">Password</string>
     <string name="submit_button_text">Submit</string>
+    <string name="settings_textview_title">Number of items: Integer.MAX_VALUE</string>
 </resources>
