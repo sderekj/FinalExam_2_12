@@ -3,4 +3,6 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="nav_drawer_topsection_color">#FF00FFFF</color>
+    <color name="nav_drawer_bottomsection_color">#FFF5F500</color>
 </resources>

@@ -7,4 +7,16 @@
     <dimen name="profile_imageview_marginbottom">200dp</dimen>
     <dimen name="profile_imagebutton_width">60dp</dimen>
     <dimen name="profile_imagebutton_height">60dp</dimen>
+    <dimen name="white_space_height">200dp</dimen>
+    <dimen name="profile_button_textview_margin">10dp</dimen>
+    <dimen name="nav_drawer_width">320dp</dimen>
+    <dimen name="nav_drawer_topsection_height">200dp</dimen>
+    <dimen name="nav_drawer_bottomsection_height">0dp</dimen>
+    <dimen name="nav_drawer_imageview_width">150dp</dimen>
+    <dimen name="nav_drawer_imageview_height">150dp</dimen>
+    <dimen name="nav_drawer_item_height">80dp</dimen>
+    <dimen name="nav_drawer_item_leftpadding">5dp</dimen>
+    <dimen name="nav_drawer_item_imageview_width">40dp</dimen>
+    <dimen name="nav_drawer_item_imageview_height">40dp</dimen>
+    <dimen name="settings_rv_height">0dp</dimen>
 </resources>

@@ -6,13 +6,13 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="#FF00FFFF"
+        android:layout_height="@dimen/nav_drawer_topsection_height"
+        android:background="@color/nav_drawer_topsection_color"
         android:gravity="center">
 
         <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="@dimen/nav_drawer_imageview_width"
+            android:layout_height="@dimen/nav_drawer_imageview_height"
             android:src="@mipmap/ic_launcher" />
 
     </LinearLayout>
@@ -20,8 +20,8 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/nav_drawer_rv"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/nav_drawer_bottomsection_height"
         android:layout_weight="1"
-        android:background="#FFF5F500" />
+        android:background="@color/nav_drawer_bottomsection_color" />
 
 </LinearLayout>

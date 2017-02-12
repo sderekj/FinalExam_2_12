@@ -13,7 +13,7 @@
     <Space
         android:id="@+id/white_space"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="@dimen/white_space_height"
         android:layout_below="@id/profile_imageview" />
 
     <RelativeLayout
@@ -31,7 +31,7 @@
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp">
+                android:layout_margin="@dimen/profile_button_textview_margin">
 
                 <ImageButton
                     android:id="@+id/heart_button"
@@ -45,14 +45,14 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/heart_button"
                     android:layout_centerHorizontal="true"
-                    android:text="Button 1" />
+                    android:text="@string/button1_text" />
 
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp">
+                android:layout_margin="@dimen/profile_button_textview_margin">
 
                 <ImageButton
                     android:id="@+id/message_button"
@@ -66,14 +66,14 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/message_button"
                     android:layout_centerHorizontal="true"
-                    android:text="Button 2" />
+                    android:text="@string/button2_text" />
 
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp">
+                android:layout_margin="@dimen/profile_button_textview_margin">
 
                 <ImageButton
                     android:id="@+id/settings_button"
@@ -87,14 +87,14 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/settings_button"
                     android:layout_centerHorizontal="true"
-                    android:text="Button 3" />
+                    android:text="@string/button3_text" />
 
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp">
+                android:layout_margin="@dimen/profile_button_textview_margin">
 
                 <ImageButton
                     android:id="@+id/logout_button"
@@ -108,7 +108,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/logout_button"
                     android:layout_centerHorizontal="true"
-                    android:text="Logout" />
+                    android:text="@string/button4_text" />
 
             </RelativeLayout>
 

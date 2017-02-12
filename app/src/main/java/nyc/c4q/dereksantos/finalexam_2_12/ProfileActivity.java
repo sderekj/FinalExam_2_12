@@ -90,23 +90,4 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
                 break;
         }
     }
-
-    public void doThis(View view) {
-        switch (view.getId()) {
-            case R.drawable.ic_favorite_black_24dp:
-                Toast.makeText(this, "Selected Heart Activity", Toast.LENGTH_SHORT).show();
-                break;
-            case R.drawable.ic_email_black_24dp:
-                Toast.makeText(this, "Selected Message Activity", Toast.LENGTH_SHORT).show();
-                break;
-            case R.drawable.ic_settings_black_24dp:
-                Intent intent = new Intent(getApplicationContext(), SettingsActivity.class);
-                startActivity(intent);
-                break;
-            case R.drawable.ic_close_black_24dp:
-                Toast.makeText(this, "Selected Logout Activity", Toast.LENGTH_SHORT).show();
-                finishAffinity();
-                break;
-        }
-    }
 }

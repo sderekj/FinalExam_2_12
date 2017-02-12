@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:onClick="doThis"
-    android:layout_height="80dp"
-    android:paddingLeft="5dp">
+    android:layout_height="@dimen/nav_drawer_item_height"
+    android:paddingStart="@dimen/nav_drawer_item_leftpadding">
 
     <ImageView
-        android:layout_centerVertical="true"
         android:id="@+id/nav_drawer_icon"
-        android:layout_width="40dp"
-        android:layout_height="40dp" />
+        android:layout_width="@dimen/nav_drawer_item_imageview_width"
+        android:layout_height="@dimen/nav_drawer_item_imageview_height"
+        android:layout_centerVertical="true" />
 
     <TextView
-        android:layout_centerVertical="true"
         android:id="@+id/nav_drawer_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/nav_drawer_icon"
-        android:text="Button 100" />
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/nav_drawer_icon"
+        android:text="@string/nav_drawer_item_placeholder_text" />
 
 </RelativeLayout>

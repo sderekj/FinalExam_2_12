@@ -24,7 +24,7 @@ public class LoginActivity extends AppCompatActivity {
         username = (EditText) findViewById(R.id.username_edittext);
         password = (EditText) findViewById(R.id.password_edittext);
         submitButton = (Button) findViewById(R.id.submit_button);
-        
+
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -42,7 +42,7 @@ public class LoginActivity extends AppCompatActivity {
         } else if (enteredPassword.isEmpty()) {
             Toast.makeText(this, "Enter a password", Toast.LENGTH_SHORT).show();
         } else {
-            Intent intent = new Intent(getApplicationContext(),ProfileActivity.class);
+            Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
             startActivity(intent);
         }
     }

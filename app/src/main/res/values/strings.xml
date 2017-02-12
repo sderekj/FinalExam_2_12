@@ -4,4 +4,9 @@
     <string name="password_edittext_hint">Password</string>
     <string name="submit_button_text">Submit</string>
     <string name="settings_textview_title">Number of items: Integer.MAX_VALUE</string>
+    <string name="button1_text">Button 1</string>
+    <string name="button2_text">Button 2</string>
+    <string name="button3_text">Button 3</string>
+    <string name="button4_text">Logout</string>
+    <string name="nav_drawer_item_placeholder_text">Button Placeholder Text</string>
 </resources>
