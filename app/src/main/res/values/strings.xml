@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">FinalExam_2_12</string>
+    <string name="username_edittext_hint">Username</string>
+    <string name="password_edittext_hint">Password</string>
+    <string name="submit_button_text">Submit</string>
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/profile_imageview"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/profile_imageview_width"
+        android:layout_height="@dimen/profile_imageview_height" />
+
+    <Space
+        android:id="@+id/white_space"
+        android:layout_below="@id/profile_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <RelativeLayout
+        android:layout_below="@id/white_space"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/button1"
+                    android:scaleType="fitXY"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="@dimen/profile_imagebutton_width"
+                    android:layout_height="@dimen/profile_imagebutton_height" />
+
+                <TextView
+                    android:text="Button 1"
+                    android:layout_marginRight="5dp"
+                    android:layout_below="@id/button1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/button2"
+                    android:scaleType="fitXY"
+
+                    android:layout_width="@dimen/profile_imagebutton_width"
+                    android:layout_height="@dimen/profile_imagebutton_height" />
+
+                <TextView
+                    android:text="Button 2"
+                    android:layout_below="@id/button2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/button3"
+                    android:scaleType="fitXY"
+                    android:layout_width="@dimen/profile_imagebutton_width"
+                    android:layout_height="@dimen/profile_imagebutton_height" />
+
+                <TextView
+                    android:text="Button 3"
+                    android:layout_below="@id/button3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/button4"
+                    android:scaleType="fitXY"
+                    android:layout_width="@dimen/profile_imagebutton_width"
+                    android:layout_height="@dimen/profile_imagebutton_height" />
+
+                <TextView
+                    android:text="Button 4"
+                    android:layout_below="@id/button4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
