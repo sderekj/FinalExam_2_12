@@ -35,18 +35,18 @@ public class DrawerItemViewHolder extends RecyclerView.ViewHolder {
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                switch (navDrawerItem.getDrawable()) {
-                    case R.drawable.ic_favorite_black_24dp:
+                switch (navDrawerItem.getResourceId()) {
+                    case R.id.heart_button:
                         Toast.makeText(itemView.getContext(), "Selected Heart Activity", Toast.LENGTH_SHORT).show();
                         break;
-                    case R.drawable.ic_email_black_24dp:
+                    case R.id.message_button:
                         Toast.makeText(itemView.getContext(), "Selected Message Activity", Toast.LENGTH_SHORT).show();
                         break;
-                    case R.drawable.ic_settings_black_24dp:
+                    case R.id.settings_button:
                         Intent intent = new Intent(itemView.getContext(), SettingsActivity.class);
                         itemView.getContext().startActivity(intent);
                         break;
-                    case R.drawable.ic_close_black_24dp:
+                    case R.id.logout_button:
                         Toast.makeText(itemView.getContext(), "Selected Logout Activity", Toast.LENGTH_SHORT).show();
                         ((Activity) itemView.getContext()).finishAffinity();
                         break;
